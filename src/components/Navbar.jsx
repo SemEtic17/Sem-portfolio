@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src='https://yt3.googleusercontent.com/NUrn6H4nPPd_NKMN17aCCauE7p46oapSLhWbo8_X1EVZ-Qp_QKC-Zmq0tlhOZi39MxpKnvPzPJs=s176-c-k-c0x00ffffff-no-rj' alt='logo' className='w-20 h-20 object-contain rounded-full' />
+          <img src='https://yt3.googleusercontent.com/NUrn6H4nPPd_NKMN17aCCauE7p46oapSLhWbo8_X1EVZ-Qp_QKC-Zmq0tlhOZi39MxpKnvPzPJs=s176-c-k-c0x00ffffff-no-rj' alt='logo' className={`object-contain rounded-full ${ scrolled ? "w-12 h-12" : "w-20 h-20"} `} />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Sem &nbsp;
             <span className='sm:block hidden'> | My portfolio</span>
