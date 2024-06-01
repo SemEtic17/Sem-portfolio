@@ -9,6 +9,7 @@
     "deployy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "set": "npm install && build",
     "preview": "vite preview"
   },
   "dependencies": {
