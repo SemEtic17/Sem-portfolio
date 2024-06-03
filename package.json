@@ -1,13 +1,16 @@
 {
-  "name": "sems-portfolio",
+  "name": "sem-portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://SemEtic17.github.io/Sem-portfolio",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deployy": "gh-pages -d dist",
     "dev": "vite",
     "constract": "vite build",
     "start": "vite",
-    "build": "npm install",
+    "build": "npm install --force && npm run constract",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -28,6 +31,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.0"
