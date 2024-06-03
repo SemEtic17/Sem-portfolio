@@ -10,7 +10,7 @@
     "dev": "vite",
     "constract": "vite build",
     "start": "vite",
-    "build": "npm install && npm run constract",
+    "build": "npm install",
     "preview": "vite preview"
   },
   "dependencies": {
