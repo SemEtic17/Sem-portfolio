@@ -6,11 +6,10 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deployy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "constract": "vite build",
+    "build": "vite build",
     "start": "vite",
-    "build": "npm install && npm run constract",
     "preview": "vite preview"
   },
   "dependencies": {
