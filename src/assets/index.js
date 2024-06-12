@@ -7,6 +7,8 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import githubb from "./tech/githubb.png";
+import npm from "./tech/npm.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -26,7 +28,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import mt from "./mt.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -40,6 +42,8 @@ export {
   menu,
   close,
   css,
+  npm,
+  githubb,
   docker,
   figma,
   git,
@@ -56,7 +60,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
+  mt,
   jobit,
   tripguide,
 };

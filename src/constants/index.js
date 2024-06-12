@@ -13,13 +13,15 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
+  github,
+  githubb,
+  npm,
   docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
+  mt,
   jobit,
   tripguide,
   threejs,
@@ -105,15 +107,20 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "githubb",
+    icon: githubb,
   },
+  {
+    name: "npm",
+    icon: npm,
+  },
+  
 ];
 
 const experiences = [
   {
     title: "Mern stuck Developer",
-    company_name: "Homewseetland",
+    company_name: "Homewseetland.com",
     icon: starbucks,
     iconBg: "#383E56",
     date: "March 2023 - April 2024",
@@ -194,9 +201,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Movie Trailer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, and find best movies trailer, providing a convenient and efficient way to choose your next movie to watch.",
     tags: [
       {
         name: "react",
@@ -211,50 +218,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: mt,
+    source_code_link: "https://github.com/SemEtic17/Movie-Trailer",
+    weblink: "https://movie-trailer-7nch.onrender.com/", 
   },
 ];
 
