@@ -13,7 +13,7 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
-
+    <div className="flex flex-row">
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Sem</span>
@@ -23,9 +23,12 @@ const Hero = () => {
             CRUD operations
           </p>
         </div>
+        <div>
+        <img className="w-[650px] h-[750px]" style={{ marginTop: "-250px" }} src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/photo_2024-07-18_12-35-27.png?alt=media&token=0a8c0c75-cc22-4ee3-b1b1-04726c6d20c7" alt=""/>
       </div>
-
-      <ComputersCanvas />
+    </div>
+      </div>
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
