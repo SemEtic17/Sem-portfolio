@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
         <div>
-        <img className="w-[650px] h-[750px]" style={{ marginTop: "-250px" }} src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/photo_2024-07-18_12-35-27.png?alt=media&token=0a8c0c75-cc22-4ee3-b1b1-04726c6d20c7" alt=""/>
+        <img className="w-[650px] h-[750px]" style={{ marginTop: "-150px" }} src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/pick_transparent_Craiyon.png?alt=media&token=664fd0bd-062a-4bb9-b31f-ad6edab18a86" alt=""/>
       </div>
     </div>
       </div>
