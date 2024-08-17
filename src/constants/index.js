@@ -22,6 +22,7 @@ import {
   tesla,
   shopify,
   mt,
+  me,
   jobit,
   tripguide,
   threejs,
@@ -221,6 +222,28 @@ const projects = [
     image: mt,
     source_code_link: "https://github.com/SemEtic17/Movie-Trailer",
     weblink: "https://movie-trailer-7nch.onrender.com/", 
+  },
+  {
+    name: "Mekelle Estate",
+    description:
+      "web application where homeowners can easily list their properties by uploading images and descriptions directly from their devices. Prospective buyers can search and browse through available listings, reading detailed descriptions to find the best match for their needs. This web app streamlines the process of connecting house sellers and buyers through an intuitive and user-friendly interface.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: me,
+    source_code_link: "https://github.com/SemEtic17/mekelle-estate",
+    weblink: "https://mekelle-estate.onrender.com", 
   },
 ];
 
