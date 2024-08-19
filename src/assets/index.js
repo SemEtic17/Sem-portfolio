@@ -30,6 +30,7 @@ import tesla from "./company/tesla.png";
 
 import mt from "./mt.png";
 import me from "./me.png";
+import hsl from "./hsl.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -63,6 +64,7 @@ export {
   tesla,
   mt,
   me,
+  hsl,
   jobit,
   tripguide,
 };

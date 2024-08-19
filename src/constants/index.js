@@ -23,6 +23,7 @@ import {
   shopify,
   mt,
   me,
+  hsl,
   jobit,
   tripguide,
   threejs,
@@ -33,10 +34,10 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  {
-    id: "work",
-    title: "Work",
-  },
+  // {
+  //   id: "work",
+  //   title: "Work",
+  // },
   {
     id: "contact",
     title: "Contact",
@@ -115,7 +116,6 @@ const technologies = [
     name: "npm",
     icon: npm,
   },
-  
 ];
 
 const experiences = [
@@ -221,12 +221,12 @@ const projects = [
     ],
     image: mt,
     source_code_link: "https://github.com/SemEtic17/Movie-Trailer",
-    weblink: "https://movie-trailer-7nch.onrender.com/", 
+    weblink: "https://movie-trailer-7nch.onrender.com/",
   },
   {
     name: "Mekelle Estate",
     description:
-      "web application where homeowners can easily list their properties by uploading images and descriptions directly from their devices. Prospective buyers can search and browse through available listings, reading detailed descriptions to find the best match for their needs. This web app streamlines the process of connecting house sellers and buyers through an intuitive and user-friendly interface.",
+      "web application where homeowners can easily list their properties by uploading images and descriptions directly from their devices. Prospective buyers can search and browse through available listings, reading detailed descriptions to find the best match for their needs.",
     tags: [
       {
         name: "react",
@@ -243,7 +243,29 @@ const projects = [
     ],
     image: me,
     source_code_link: "https://github.com/SemEtic17/mekelle-estate",
-    weblink: "https://mekelle-estate.onrender.com", 
+    weblink: "https://mekelle-estate.onrender.com",
+  },
+  {
+    name: "Homesweetland",
+    description:
+      "website with a blog and detailed assignment descriptions, allowing students to search and access the instructions. Tutors could also offer their services to individual clients, and the center's activities were highlighted on the homepage.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hsl,
+    source_code_link: "https://github.com/SemEtic17/Homesweetland",
+    weblink: "https://homesweetland.onrender.com/",
   },
 ];
 
