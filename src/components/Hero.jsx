@@ -9,30 +9,35 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-    <div className="flex flex-row">
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Sem</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Mern stuck apps, with <br className='sm:block hidden' />
-            CRUD operations
-          </p>
+        <div className="flex flex-col gap-8 md:flex-row md:gap-0">
+          <div>
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className="text-[#915EFF]">Sem</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I develop Mern stuck apps, with <br className="sm:block hidden" />
+              CRUD operations
+            </p>
+          </div>
+          <div>
+            <img
+              className="w-[600px] h-[700px]  md:w-[650px] md:h-[750px]"
+              style={{ marginTop: "-150px" }}
+              src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/pick_transparent_Craiyon.png?alt=media&token=664fd0bd-062a-4bb9-b31f-ad6edab18a86"
+              alt=""
+            />
+          </div>
         </div>
-        <div>
-        <img className="w-[650px] h-[750px]" style={{ marginTop: "-150px" }} src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/pick_transparent_Craiyon.png?alt=media&token=664fd0bd-062a-4bb9-b31f-ad6edab18a86" alt=""/>
-      </div>
-    </div>
       </div>
       {/* <ComputersCanvas /> */}
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -42,7 +47,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>
