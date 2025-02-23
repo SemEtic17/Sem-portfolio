@@ -19,7 +19,7 @@ const Hero = () => {
               Hi, I'm <span className="text-[#915EFF]">Sem</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop Mern stuck apps, with <br className="sm:block hidden" />
+              I develop MERN stack apps, with <br className="sm:block hidden" />
               CRUD operations
             </p>
           </div>
