@@ -55,14 +55,14 @@ const ProjectCard = ({
           >
             {name}
           </h3>
-          <p className="mt-2 text-secondary text-[14px] line-clamp-4">
+          <p className="my-2 text-secondary text-[14px] max-h-32 line-clamp-6">
             {description}
           </p>
         </div>
         <p className="text-yellow-300">
-          visite the website by clicking the title
+          visit the website by clicking the title
         </p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-1 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
