@@ -55,7 +55,7 @@ const ProjectCard = ({
           >
             {name}
           </h3>
-          <p className="my-2 text-secondary text-[14px] max-h-32 line-clamp-6">
+          <p className="my-2 text-secondary text-[14px] max-h-[110px] overflow-auto">
             {description}
           </p>
         </div>
