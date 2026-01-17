@@ -36,21 +36,20 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <img
-            src="https://yt3.ggpht.com/jujhAWfRK_G2X2ypp0A7GWiw7YCenLP89QWA9VwfwxBkRbkmzovyt35l0oZCKKmZG2y9SDWi=s600-c-k-c0x00ffffff-no-rj-rp-mo"
+            src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/1768640881459-removebg-preview.png?alt=media&token=85451fa0-e93d-426d-90b5-9824e0e428d5"
             alt="logo"
-            className={`object-contain rounded-full ${
-              scrolled ? "w-12 h-12" : "w-20 h-20"
+            className={`object-contain rounded-full mr-[-20px] ${
+              scrolled ? "w-12 h-12" : "w-32 h-32"
             } `}
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Sem &nbsp;
             <span className="sm:block hidden"> | My portfolio</span>
           </p>
         </Link>

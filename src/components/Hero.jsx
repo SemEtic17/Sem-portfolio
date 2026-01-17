@@ -25,9 +25,9 @@ const Hero = () => {
           </div>
           <div>
             <img
-              className="w-[600px] h-[700px]  md:w-[650px] md:h-[750px]"
-              style={{ marginTop: "-150px" }}
-              src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/pick_transparent_Craiyon.png?alt=media&token=664fd0bd-062a-4bb9-b31f-ad6edab18a86"
+              className="w-[500px] h-[700px]  md:w-[550px] md:h-[750px]"
+              style={{ marginTop: "-110px" }}
+              src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/craiyon_124448_image.png?alt=media&token=0fd93f17-d6ad-4247-aa0f-f546a18812ba"
               alt=""
             />
           </div>
