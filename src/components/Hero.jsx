@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full md:h-[770px] h-[892px] mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-        <div className="flex flex-col gap-8 md:flex-row md:gap-0">
+        <div className="flex flex-col gap-12 md:flex-row md:gap-0">
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className="text-[#915EFF]">Sem</span>
@@ -25,9 +25,8 @@ const Hero = () => {
           </div>
           <div>
             <img
-              className="w-[500px] h-[700px]  md:w-[550px] md:h-[750px]"
-              style={{ marginTop: "-110px" }}
-              src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/craiyon_124448_image.png?alt=media&token=0fd93f17-d6ad-4247-aa0f-f546a18812ba"
+              className="w-[500px] h-[700px]  md:w-[550px] md:h-[750px] mt-[-100px]"
+              src="hero-img.png"
               alt=""
             />
           </div>

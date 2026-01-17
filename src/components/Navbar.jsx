@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 60) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -29,8 +29,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center fixed top-0 z-20 transition-all duration-300 overflow-visible ${
+        scrolled ? "bg-primary max-h-16" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -43,10 +43,10 @@ const Navbar = () => {
           }}
         >
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/movie-trailer-2d526.appspot.com/o/1768640881459-removebg-preview.png?alt=media&token=85451fa0-e93d-426d-90b5-9824e0e428d5"
+            src="logo.png"
             alt="logo"
-            className={`object-contain rounded-full mr-[-20px] ${
-              scrolled ? "w-12 h-12" : "w-32 h-32"
+            className={`object-contain rounded-full relative ${
+              scrolled ? "w-32 h-32 mr-[-20px] top-2" : "w-32 h-32 mr-[-20px]"
             } `}
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
