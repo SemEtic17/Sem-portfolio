@@ -17,6 +17,8 @@ const App = () => {
   useEffect(() => {
     let intervalId = null;
     let timeoutId = null;
+    let loadTimeoutId = null;
+    let hashChangeTimeoutId = null;
 
     // Handle hash navigation on initial page load
     const scrollToHash = () => {
@@ -78,7 +80,7 @@ const App = () => {
     // Also try after window load event (as backup)
     const handleLoad = () => {
       if (timeoutId) clearTimeout(timeoutId);
-      setTimeout(attemptScroll, 100);
+      loadTimeoutId = setTimeout(attemptScroll, 100);
     };
 
     if (document.readyState === "complete") {
@@ -89,7 +91,7 @@ const App = () => {
 
     // Handle hash changes (when user clicks nav links)
     const handleHashChange = () => {
-      setTimeout(scrollToHash, 100);
+      hashChangeTimeoutId = setTimeout(scrollToHash, 100);
     };
     window.addEventListener("hashchange", handleHashChange);
 
@@ -97,6 +99,8 @@ const App = () => {
     return () => {
       if (intervalId) clearInterval(intervalId);
       if (timeoutId) clearTimeout(timeoutId);
+      if (loadTimeoutId) clearTimeout(loadTimeoutId);
+      if (hashChangeTimeoutId) clearTimeout(hashChangeTimeoutId);
       window.removeEventListener("load", handleLoad);
       window.removeEventListener("hashchange", handleHashChange);
     };
