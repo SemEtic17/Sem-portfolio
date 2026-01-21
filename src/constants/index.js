@@ -24,6 +24,7 @@ import {
   mt,
   me,
   hsl,
+  mahair,
   jobit,
   tripguide,
   threejs,
@@ -201,6 +202,32 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Ma Hair – Online Ordering",
+    description:
+      "A full-stack website built for a local hair business with a strong social media presence. The platform showcases products, gallery (images & videos), and lays the foundation for online ordering to help convert social media traffic into real customers.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: mahair,
+    source_code_link: "https://github.com/SemEtic17/MaHair",
+    weblink: "https://mahair.onrender.com/",
+  },  
   {
     name: "Movie Trailer",
     description:
