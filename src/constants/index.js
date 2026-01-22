@@ -25,6 +25,7 @@ import {
   me,
   hsl,
   mahair,
+  mkdelivery,
   jobit,
   tripguide,
   threejs,
@@ -229,9 +230,9 @@ const projects = [
     weblink: "https://mahair.onrender.com/",
   },  
   {
-    name: "Movie Trailer",
+    name: "Mekelle Delivery",
     description:
-      "Web-based platform that allows users to search, and find best movies trailer, providing a convenient and efficient way to choose your next movie to watch.",
+      "Built a complete food ordering platform that provides a smooth experience for customers and restaurant owners. Users can browse menus, customize items, and pay securely, with real-time cart updates for a simple checkout process. On the backend, the admin dashboard lets restaurant staff track orders in real time, update statuses, and manage operations effectively. This design aims to improve customer satisfaction while streamlining restaurant workflow.",
     tags: [
       {
         name: "react",
@@ -246,9 +247,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: mt,
-    source_code_link: "https://github.com/SemEtic17/Movie-Trailer",
-    weblink: "https://movie-trailer-7nch.onrender.com/",
+    image: mkdelivery,
+    source_code_link: "https://github.com/SemEtic17/mekelle-food-ordering",
+    weblink: "https://mekelle-delivery.onrender.com/",
   },
   {
     name: "Mekelle Estate",

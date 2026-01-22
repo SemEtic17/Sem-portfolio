@@ -32,6 +32,7 @@ import mt from "./mt.png";
 import me from "./me.png";
 import hsl from "./hsl.png";
 import mahair from "./mahair.png";
+import mkdelivery from "./mk-delivery.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -67,6 +68,7 @@ export {
   me,
   hsl,
   mahair,
+  mkdelivery,
   jobit,
   tripguide,
 };
