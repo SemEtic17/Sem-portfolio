@@ -27,7 +27,7 @@ const RecentWork = () => {
       >
         <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-black-100 border border-tertiary">
           <iframe
-            src="https://take-me-anywhere-demo.netlify.app/"
+            src="https://diva-haus.onrender.com/"
             title="My Recent Work - Take Me Anywhere"
             className="w-full h-[600px] md:h-[700px] lg:h-[800px] border-0"
             allow="fullscreen"
