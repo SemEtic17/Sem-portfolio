@@ -46,7 +46,7 @@ const Navbar = () => {
             src="logo.png"
             alt="logo"
             className={`object-contain rounded-full relative ${
-              scrolled ? "w-32 h-32 mr-[-20px] top-2" : "w-32 h-32 mr-[-20px]"
+              scrolled ? "w-12 h-12 mr-[10px]" : "w-16 h-16 mr-[10px]"
             } `}
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
