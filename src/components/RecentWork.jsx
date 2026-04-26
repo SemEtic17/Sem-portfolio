@@ -27,7 +27,7 @@ const RecentWork = () => {
       >
         <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-black-100 border border-tertiary">
           <iframe
-            src="https://diva-haus.onrender.com/"
+            src="https://arsema-portfolio.lovable.app/"
             title="My Recent Work - Take Me Anywhere"
             className="w-full h-[600px] md:h-[700px] lg:h-[800px] border-0"
             allow="fullscreen"
