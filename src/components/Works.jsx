@@ -49,20 +49,35 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3
-            className="text-white font-bold text-[24px] cursor-pointer"
-            onClick={() => window.open(weblink, "_blank")}
-          >
-            {name}
-          </h3>
-          <p className="my-2 text-secondary text-[14px] max-h-[110px] overflow-auto">
+          <div className="flex justify-between items-center">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <div
+              onClick={() => window.open(weblink, "_blank")}
+              className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform"
+              title="Live Demo"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 text-white"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+            </div>
+          </div>
+          <p className="mt-2 text-secondary text-[14px] leading-relaxed">
             {description}
           </p>
         </div>
-        <p className="text-yellow-300">
-          visit the website by clicking the title
-        </p>
-        <div className="mt-1 flex flex-wrap gap-2">
+
+        <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -81,7 +96,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>Selected Case Studies</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -90,11 +105,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          The following selection of projects demonstrates my commitment to engineering excellence 
+          and strategic problem-solving. Each case study represents a unique architectural 
+          challenge—from optimizing revenue streams for high-traffic brands to engineering 
+          complex logistics ecosystems. I prioritize performance, scalability, and 
+          business-centric outcomes in every line of code.
         </motion.p>
       </div>
 

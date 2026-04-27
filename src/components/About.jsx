@@ -47,12 +47,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in
-        JavaScript and expertise in frameworks like React and Express.
-        I Also use MongoDB as Database and for documentation purposes.
-        I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a results-driven software engineer specializing in high-performance web architectures 
+        and scalable full-stack ecosystems. With deep expertise in the React, Node.js, and 
+        Three.js ecosystems, I bridge the gap between complex engineering challenges and 
+        seamless user experiences. I don't just write code; I architect solutions that drive 
+        business value, optimize performance, and solve mission-critical problems at scale. 
+        Whether it's building from the ground up or optimizing existing systems, I deliver 
+        engineering excellence that moves the needle.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
