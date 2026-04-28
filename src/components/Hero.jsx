@@ -13,22 +13,26 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-        <div className="flex flex-col gap-5 md:flex-row md:gap-0">
-          <div>
+        <div className="flex flex-col gap-12 md:flex-row md:gap-0 items-center">
+          <div className="mt-[-300px]">
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className="text-[#915EFF]">Sem</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-2xl`}>
+            <p className={`${styles.heroSubText} text-white-100 max-w-xl`}>
               I engineer high-performance, scalable web applications <br className="sm:block hidden" />
               and immersive digital experiences that drive growth.
             </p>
           </div>
+          <div>
+            <img
+              className="w-[500px] h-[700px]  md:w-[550px] md:h-[750px] mt-[-100px] object-contain"
+              src="hero-img.png"
+              alt="Sem"
+            />
+          </div>
         </div>
       </div>
-      
-      <div className="absolute inset-0 top-[250px] md:top-[120px] w-full h-full">
-        <ComputersCanvas />
-      </div>
+      {/* <ComputersCanvas /> */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
