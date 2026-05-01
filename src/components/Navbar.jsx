@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full justify-self-center flex items-center fixed top-4 z-20 transition-all duration-300 overflow-visible ${
-        scrolled ? "bg-primary/60 max-h-20 inset-0  w-[80%] rounded-full" : "bg-transparent"
+        scrolled ? "bg-primary/40 backdrop-blur-lg border border-white/10 shadow-lg max-h-20 inset-0 w-[80%] rounded-full" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -79,7 +79,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-black/40 backdrop-blur-md border border-white/10 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
