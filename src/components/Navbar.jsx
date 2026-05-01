@@ -29,10 +29,21 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full justify-self-center flex items-center fixed top-4 z-20 transition-all duration-300 overflow-visible ${
-        scrolled ? "bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl max-h-20 inset-0 w-[80%] rounded-full" : "bg-transparent"
+      } flex items-center fixed top-0 pt-4 z-20 transition-all duration-500 ease-in-out left-1/2 -translate-x-1/2 ${
+        scrolled 
+          ? "w-[90%] sm:w-[80%] bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl rounded-full mt-4 py-2" 
+          : "w-full bg-transparent py-5"
       }`}
     >
+      {/* Scroll Progress Indicator */}
+      {scrolled && (
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-[1px] bg-white/10 overflow-hidden rounded-full">
+          <div 
+            className="h-full bg-white/40 transition-all duration-150"
+            style={{ width: `${Math.min((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100, 100)}%` }}
+          />
+        </div>
+      )}
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
@@ -60,10 +71,11 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer transition-all duration-300 relative group`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
+              <span className={`absolute -bottom-1 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full ${active === nav.title ? "w-full" : "w-0"}`}></span>
             </li>
           ))}
         </ul>
