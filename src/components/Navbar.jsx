@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full justify-self-center flex items-center fixed top-4 z-20 transition-all duration-300 overflow-visible ${
-        scrolled ? "bg-primary/40 backdrop-blur-lg border border-white/10 shadow-lg max-h-20 inset-0 w-[80%] rounded-full" : "bg-transparent"
+        scrolled ? "bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl max-h-20 inset-0 w-[80%] rounded-full" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
